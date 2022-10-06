@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.threedots{
+    text-align: center;
+}
+button{
+    background-color: #337450;
+    border: none;
+    padding: 2%;
+    border-radius: 5%;
+}
+button>a{
+    text-decoration: none;
+    color: aliceblue;
+}
+button>a:hover{
+    transition-duration: 400ms;
+    color: black;
+}
+button>a:active{
+    color: rgb(74, 4, 19);
+}
+
+
+/* Intro */
+
+
+.intro{
+    background-color: #dfffec;
+    margin-bottom: 5%;
+}
+.profile{
+    margin: 25%;
+    height: 5em;
+    border-radius: 100%;
+    transition-duration: 700ms;
+}
+.profile:hover{
+    transform:rotateZ(360deg);
+}
+.nav{
+    display: flex;
+    align-items:center; 
+}
+.navele{
+    display: flex;
+    margin: 0 0 0 auto;
+}
+.navele>a{
+    margin:1em;
+    text-decoration: none;
+    font-size:150%;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color: rgb(36, 137, 36);
+    transition-duration: 300ms;
+}
+.navele>a:hover{
+    transition-duration: 300ms;
+    transform: translateY(-5px);
+    color: rgb(106, 0, 255);
+}
+.title{
+    text-align: center;
+    position: relative;
+}
+.tcloud{
+    margin-left: 4%;
+    top: 100;
+    left: 8;
+    height: 5em;
+    position: absolute;
+    transition-duration:300ms;
+}
+.tcloud:hover{
+    transform: translateX(-20%) scale(120%);
+}
+.bcloud{
+    margin-left: 30%;
+    margin-right: 50%;
+    height: 5em;
+    position: absolute;
+    transition-duration:300ms;
+}
+.bcloud:hover{
+    transform: translateX(20%) scale(120%);
+}
+.name{
+    font-family: 'Amatic SC', cursive;
+    font-size:700%;
+    font-weight:100;
+    color: rgb(36, 137, 36);
+    margin-left: auto;
+}
+.work{
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Cookie', cursive;
+    font-size: 200%;
+    font-weight: 100;
+    margin: 0 auto 0 auto;
+}
+.mountain{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+
+/* About */
+
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+.aboutHeading{
+    font-family: 'Dosis';
+    font-size: 3em;
+    margin: 5%;
+    text-align: center;
+}
+.myPic{
+    height: 25em;
+    margin: 1em;
+    border-radius: 100%;
+}
+.aboutInnerText{
+    margin: 1em;
+    font-family: 'Edu VIC WA NT Beginner';
+    font-size:2em;
+}
+
+
+/* Work */
+
+.work{
+    background-color: #dfffec;
+    padding: 0.5em 0 0.5em 0;
+    margin: 5% 0;
+}
+.workAllCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:auto;
+    flex-wrap:wrap;
+    margin: 5%;
+}
+.workHeading{
+    font-family: 'Dosis';
+    font-size: 2em;
+    margin: 5%;
+    text-align: center;
+}
+.workItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    width: 50%;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 3%;
+    background-image:linear-gradient(to bottom, #bef49a,#89daa8);
+}
+.workItem>div>h1{
+    text-align: center;
+    font-size: 2em;
+}
+.workImg{
+    height: 10em;
+    margin-bottom: 1em;
+    /* border-radius: 100%; */
+}
+
+
+/* Hobbies */
+
+
+.hobbies{
+    margin: 5%;
+}
+.hobbiesHeading{
+    margin-bottom:1em ;
+    font-family: 'Dosis';
+    font-size: 3em;
+    color:rgb(70, 171, 70) ;
+}
+.hobbies li{
+    font-family: 'Edu VIC WA NT Beginner';
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+
+/* Contact */
+
+
+.contact{
+    background-color: rgb(34, 34, 34);
+    padding-bottom: 3%;
+}
+.contactHeading{
+    font-family: 'Dosis';
+    color:rgb(70, 171, 70);
+    font-size: 2em;
+    padding: 5% 5% 1% 5%;
+    text-align: center;
+    width: max-content;    
+}
+.contactDescAndLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.contact p{
+    padding: 1% 5% 0 5%;
+    display: inline-block;
+    font-size: 1.3em;
+    font-family: 'Edu VIC WA NT Beginner';
+    color: aliceblue;
+}
+.contact a{
+    font-size: 1.5em;
+    margin: 1.5%;
+    color: rgb(23, 205, 99);
+    transition-duration: 300ms;
+}
+.contact a:hover{
+    transform: scale(1.3);
+}
+.contact a:active{
+    color: #dfffec;
+}
+
+
+@media (max-width: 70em)
+{
+
+    /* Intro */
+
+    .profile{
+        margin: 45%;
+    }
+    .navele>a{
+        margin:0.8em;
+        font-size:130%;
+    }
+    .navele>a:hover{
+        transform: translateY(-5px);
+    }
+    .tcloud{
+        height: 4em;
+    }
+    .bcloud{
+        height: 4em;
+    }
+    .name{
+        font-size:640%;
+    }
+    .work{
+        font-size: 180%;
+    }
+    .mountainInner{
+        height: 15em;
+    }
+
+    /* About */
+    
+    .aboutHeading{
+        font-size: 2.5em;
+        margin: 4%;
+    }
+    .myPic{
+        height: 20em;
+    }
+    .aboutInnerText{
+        font-size:1.5em;
+    }
+
+    /* Work */
+
+    .workAllCards{
+        margin: 2%;
+    }
+    .workHeading{
+        font-size: 1.5em;
+        margin: 4%;
+   }
+    .workItem{
+        font-size: 0.8em;
+    }
+    .workImg{
+        height: 9em;
+    }
+    
+    /* Hobbies */
+
+
+    .hobbies{
+        margin: 4.5%;
+    }
+    .hobbiesHeading{
+        font-size: 2.5em;
+    } 
+    .hobbies li{
+        font-size: 1.3em;
+        margin: 0.4em;
+    }
+
+    /* Contact */
+
+    .contactHeading{
+        font-size: 1.5em;
+    }
+    .contact p{
+        font-size: 1.2em;
+    }
+    .contact a{
+        font-size: 1.3em;
+    }
+}
+@media (max-width: 40em)
+{
+
+    .threedots{
+        font-size: 0.6em;
+    }
+     /* Intro */
+
+    .profile{
+        height: 4em;
+    }
+    .navele>a{
+        margin:0.4em;
+    }
+    .navele>a:hover{
+        transform: translateY(-4px);
+    }
+    .tcloud{
+        height: 3em;
+    }
+    .bcloud{
+        height: 3em;
+    }
+    .name{
+        font-size:600%;
+    }
+    .work{
+        font-size: 160%;
+    }
+    .mountainInner{
+        height: 13em;
+    }
+
+    /* About */
+    
+    .about{
+        flex-direction: column;
+    }
+    .aboutHeading{
+        font-size: 2.1em;
+    }
+    .myPic{
+        height: 18em;
+    }
+    .aboutInnerText{
+        font-size:1.3em;
+        text-align: center;
+    }
+
+    /* Work */
+
+    .workHeading{
+        font-size: 1.3em;
+    }
+    .workImg{
+        height: 7em;
+    }
+    
+    /* Hobbies */
+
+    .hobbiesHeading{
+        font-size: 2.1em;
+    } 
+    .hobbies li{
+        font-size: 1.1em;
+    }
+
+    /* Contact */
+
+    .contactHeading{
+        font-size: 1.4em;
+    }
+    .contact p{
+        font-size: 1em;
+    }
+    .contact a{
+        font-size: 1.2em;
+    }
+}
